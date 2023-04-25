@@ -46,6 +46,7 @@
             this.canceMovelButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.undoStepLabel = new System.Windows.Forms.Label();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +127,8 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rulesToolStripMenuItem});
+            this.rulesToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.helpToolStripMenuItem.Text = "&Справка";
@@ -134,7 +136,7 @@
             // rulesToolStripMenuItem
             // 
             this.rulesToolStripMenuItem.Name = "rulesToolStripMenuItem";
-            this.rulesToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.rulesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rulesToolStripMenuItem.Text = "&Правила игры";
             this.rulesToolStripMenuItem.Click += new System.EventHandler(this.rulesToolStripMenuItem_Click);
             // 
@@ -196,6 +198,13 @@
             this.undoStepLabel.TabIndex = 7;
             this.undoStepLabel.Text = "0";
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "&О программе";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -246,5 +255,6 @@
         private Button canceMovelButton;
         private Label label2;
         private Label undoStepLabel;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

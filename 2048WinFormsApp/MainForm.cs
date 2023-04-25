@@ -610,5 +610,10 @@
                 canceMovelButton.Enabled = false;
             }
         }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Версия 1.0\r\n\r\nРазработчик Борщев С.А. (aka GudzON)\r\n2022г.", "2048. О программе.", MessageBoxButtons.OK);
+        }
     }
 }
