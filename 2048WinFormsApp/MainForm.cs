@@ -111,7 +111,25 @@
                 }
             }
 
-            GameOver();
+            if (!CheckValidMove())
+            {
+                GameOver();
+            }
+        }
+
+        private bool CheckValidMove()
+        {
+            for (int i = 0; i < fieldSize - 1; i++)
+            {
+                for (int j = 0; j < fieldSize - 1; j++)
+                {
+                    if (labelsPlayngField[i, j].Text == labelsPlayngField[i, j + 1].Text || labelsPlayngField[i, j].Text == labelsPlayngField[i + 1, j].Text)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
         private int GenerateRandomTwoFour()
